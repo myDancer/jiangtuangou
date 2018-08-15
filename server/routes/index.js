@@ -33,7 +33,7 @@ router.get('/message', controllers.message.get)
 router.post('/message', controllers.message.post)
 
 
-// 江团购功能图标
+// 江团购首页接口
 router.get('/initData', controllers.init.get)
 
 // GET 用来测试
