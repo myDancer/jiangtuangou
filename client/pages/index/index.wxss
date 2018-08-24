@@ -46,3 +46,27 @@ page {
 .placehoder{
   line-height: 1;
 }
+.swiper-wrapper{
+  width: 100%;
+}
+.slide-image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.swiper{
+}
+.swiper-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.catalog{
+  width: 20%;
+  margin-top: 3vw;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

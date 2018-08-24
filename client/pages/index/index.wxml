@@ -14,13 +14,20 @@
   </view>
 <!-- 功能图标 -->
   <view class='swiper-wrapper'>
-    <swiper indicator-dots="{{indicatorDots}}"
-    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{imgUrls}}">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    <swiper class='swiper' indicator-dots="{{true}}" indicator-color="{{'rgba(0, 0, 0, .2)'}}"
+    indicator-active-color="{{'rgba(0, 0, 0, .6)'}}">
+        <swiper-item class="swiper-item">
+          <view class='catalog' wx:for="{{onePageCatalogs}}" wx:key="{{item.id}}">
+            <image src="{{item.img}}" class="slide-image"/>
+            <view>{{item.name}}</view>
+          </view>
         </swiper-item>
-      </block>
+        <swiper-item class="swiper-item" wx:if="twoPageCatalogs.length">
+          <view class='catalog' wx:for="{{twoPageCatalogs}}" wx:key="{{item.id}}">
+            <image src="{{item.img}}" class="slide-image"/>
+            <view>{{item.name}}</view>
+          </view>
+        </swiper-item>
     </swiper>
   </view>
 </view>
