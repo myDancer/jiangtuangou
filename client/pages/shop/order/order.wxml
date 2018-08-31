@@ -1,0 +1,34 @@
+<!--pages/shop/order/order.wxml-->
+<view class='order'>
+  <view class='recommend'>商家推荐</view>
+  <scroll-view scroll-x scroll-with-animation="true" style="width: 100%;">
+    <view class='scroll'>
+        <view class="scroll-view-item" wx:for="{{foodCard}}" wx:key="{{index}}">
+          <image class='item-img' src='https://fuss10.elemecdn.com/9/fb/af733fd8baadfe1116578dafe6d49jpeg.jpeg?imageMogr/format/webp/thumbnail/240x/'></image>
+          <view>
+            <view class='food-card-1'>招牌：韭菜肉三鲜汤饺</view>
+            <view class='food-card-2'>月售16好评率0%</view>
+            <view class='food-card-3'><view>￥24</view></view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  <view class='menu'>
+    <view class='menucategorys'>
+      <view class='menucategory memu-active'>热销</view>
+      <view class='menucategory'>优惠</view>
+      <view class='menucategory'>扫码领红包</view>
+      <view class='menucategory'>热销</view>
+      <view class='menucategory'>优惠</view>
+      <view class='menucategory'>扫码领红包</view>
+      <view class='menucategory'>热销</view>
+      <view class='menucategory'>优惠</view>
+      <view class='menucategory'>扫码领红包</view>
+    </view>
+    <view class='container'>
+      <view class='dt'>
+        <view class='strong'>热销</view>大家喜欢吃，才叫真的好吃
+      </view>
+    </view>
+  </view>
+</view>

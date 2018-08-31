@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "order": "/pages/shop/order/order"
+  }
+}

@@ -12,5 +12,38 @@
 	},
 	"appid": "wx5218ac9c1aade6bc",
 	"projectname": "jiangtuangou",
-	"condition": {}
+	"compileType": "miniprogram",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "商店详情页",
+					"pathName": "pages/shop",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商店详情",
+					"pathName": "pages/shop/shop"
+				}
+			]
+		}
+	}
 }

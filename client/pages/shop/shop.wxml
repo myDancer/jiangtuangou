@@ -1,0 +1,20 @@
+<!--pages/shop.wxml-->
+<view class='shop'>
+  <view class='nav'></view>
+  <view class='shopInfo'>
+    <image class='logo' src='https://fuss10.elemecdn.com/6/25/35d6be97a57b3096e2b943f31576ajpeg.jpeg?imageMogr/format/webp/thumbnail/150x/'></image>
+    <view class='shopName'>东北水饺(文明路店)</view>
+    <view class='line line1'><view class='item'>评价4.6</view><view class='item'>月售2524单</view><view>蜂鸟快送约42分钟</view></view>
+    <view class='line line2'><view class='first-icon'>首单</view><view>新用户下单立减17元（不与其他活动同享）</view><view class='discount'>17个优惠</view></view>
+    <view class='line3'>公告：尊敬的顾客们，欢迎光临！饺子现包现煮，纯手工现擀饺子皮，新鲜饺子，饺子有家的味道。</view>
+  </view>
+  <!-- tab菜单 -->
+  <view class='shopTab'>
+    <view class="tabItem {{tabIndex==1 ? 'on' : ''}}" data-current="1" bindtap="changeTab"><view class='tabName'>点餐<view class='tabbar' wx:if="{{tabIndex==1}}"></view></view></view>
+    <view class="tabItem {{tabIndex==2 ? 'on' : ''}}" data-current="2" bindtap="changeTab"><view class='tabName'>评价<view class='tabbar' wx:if="{{tabIndex==2}}"></view></view></view>
+    <view class="tabItem {{tabIndex==3 ? 'on' : ''}}" data-current="3" bindtap="changeTab"><view class='tabName'>商家<view class='tabbar' wx:if="{{tabIndex==3}}"></view></view></view>
+  </view>
+
+  <!-- 点餐 -->
+  <order></order>
+</view>

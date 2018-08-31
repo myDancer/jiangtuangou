@@ -1,0 +1,83 @@
+/* pages/shop/order/order.wxss */
+.order{
+  padding-top: 4.266667vw;
+}
+.recommend{
+  padding-left: 4vw;
+  color: #333;
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-bottom: 2.6vw;
+}
+.scroll{
+  display: flex;
+  justify-content: flex-start;
+}
+.scroll-view-item{
+  margin-left: 4.266667vw;
+  margin-right: 2.666667vw;
+  padding-bottom: 4.266667vw;
+  width: 32vw;
+}
+.item-img{
+  width: 32vw;
+  height: 32vw;
+}
+.food-card-1{
+  color: #333;
+  font-size: 30rpx;
+  margin: 1.866667vw 0 .933333vw;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.food-card-2{
+  color: #999;
+  font-size: 24rpx;
+  margin-bottom: 1.866667vw;
+  min-height: 1em;
+}
+.food-card-3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: .266667vw;
+  color: rgb(255, 83, 57);
+  font-size: 30rpx;
+}
+.menu{
+  display: flex;
+}
+.menucategorys{
+  overflow-y: auto;
+  height: 100%;
+  width: 21vw;
+  background-color: #f8f8f8;
+}
+.menucategory{
+  color: #333;
+  padding: 4.666667vw 2vw;
+  font-size: 30rpx;
+}
+.memu-active{
+  background-color: #fff;
+}
+.container{
+  position: relative;
+  height: 100%;
+  width: 79vw;
+}
+.dt{
+  padding: 2vw 8vw 2vw 0;
+  margin-left: 2.666667vw;
+  font-size: 22rpx;
+  display: flex;
+  align-items: flex-end;
+  color: #999;
+}
+.strong{
+  font-size: 26rpx;
+  color: #666;
+  font-weight: 700;
+  margin-right: 1.333333vw;
+}
