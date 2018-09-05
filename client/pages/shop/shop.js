@@ -1,4 +1,6 @@
-// pages/shop.js
+var qcloud = require('../../vendor/wafer2-client-sdk/index')
+var config = require('../../config')
+var util = require('../../utils/util.js')
 Page({
 
   /**
@@ -16,7 +18,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if (options.id) {
+      this.getShopDetail(options.id) // 获取商店详情
+    }
   },
 
   /**
@@ -66,5 +70,24 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  /**
+   * 获取商店详情
+   */
+  getShopDetail: function (id) {
+    let _this = this;
+    qcloud.request({
+      url: config.service.shop + '?id=' + id,
+      login: false,
+      success(result) {
+        if (result.data.code == 0) {
+          console.log(result.data.data);
+        }
+      },
+      fail(error) {
+        util.showModel('请求失败', error);
+        console.log('request fail', error);
+      }
+    })
   }
 })

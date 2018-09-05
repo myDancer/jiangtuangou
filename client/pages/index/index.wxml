@@ -60,7 +60,7 @@
   </view>
   <!-- 商家列表 -->
   <view class='shoplist'>
-    <navigator url="/pages/shop/shop"	 class='shop' wx:for="{{initData.restaurants}}" wx:key="{{item.id}}">
+    <navigator url="/pages/shop/shop?id={{item.id}}"	 class='shop' wx:for="{{initData.restaurants}}" wx:key="{{item.id}}">
       <view class='shop-info'>
 
         <view class='logo-container'>

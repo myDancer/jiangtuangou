@@ -37,5 +37,5 @@ router.post('/message', controllers.message.post)
 router.get('/initData', controllers.init.get)
 
 // GET 用来测试
-router.get('/test', controllers.test.get)
+router.get('/shop', controllers.shop.get)
 module.exports = router

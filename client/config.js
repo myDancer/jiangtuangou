@@ -24,7 +24,10 @@ var config = {
         uploadUrl: `${host}/weapp/upload`,
 
         // 获取功能图标
-        init: `${host}/weapp/initData`
+        init: `${host}/weapp/initData`,
+
+        // 获取商店详情
+        shop: `${host}/weapp/shop`
     }
 };
 
